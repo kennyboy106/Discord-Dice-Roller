@@ -6,6 +6,7 @@ import asyncio
 import os
 import sys
 import traceback
+import sqlite3
 
 try:
     import discord
@@ -17,8 +18,6 @@ except Exception as e:
     print(f"Error importing libraries: {e}")
     print(traceback.format_exc())
     sys.exit(1)
-
-
 
 '''
 The plan is to create a discord bot that uses SQL database to 
@@ -35,3 +34,11 @@ Requirements:
         /bag add/remove
     6. Customizable output of results. Maybe default to individual rolls & total
 '''
+
+
+sqliteConnection = sqlite3.connect('sql.db')
+
+
+
+
+
