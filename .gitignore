@@ -1,2 +1,4 @@
 /reference
 Discord Dice Roller.code-workspace
+*.venv
+
